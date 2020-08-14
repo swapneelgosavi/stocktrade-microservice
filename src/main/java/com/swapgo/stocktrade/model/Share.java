@@ -1,10 +1,14 @@
 package com.swapgo.stocktrade.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Share {
@@ -15,8 +19,10 @@ public class Share {
 	private float price;
 	private int quantity;
 	private String scriptName;
-	
+	private Date tradeDate;
+
 	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonIgnore
 	private User user;
 	
 	
@@ -54,9 +60,18 @@ public class Share {
 	public void setUser(User user) {
 		this.user = user;
 	}
+	
+	public Date getTradeDate() {
+		return tradeDate;
+	}
+
+	public void setTradeDate(Date tradeDate) {
+		this.tradeDate = tradeDate;
+	}
 	@Override
 	public String toString() {
-		return "Share [id=" + id + ", scriptName=" + scriptName + ", price=" + price + ", quantity=" + quantity + "]";
+		return "Share [id=" + id + ", price=" + price + ", quantity=" + quantity + ", scriptName=" + scriptName
+				+ ", tradeDate=" + tradeDate + "]";
 	}
 	
 }
