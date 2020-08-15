@@ -14,13 +14,13 @@ It has features like :
 #### Example Requests :
 
 1. Get All Users (GET)
-   http://localhost:8080/users
+    http://localhost:8080/users
    
 2. Get user based on id (GET)
-   http://localhost:8080/users/111
+    http://localhost:8080/users/111
    
 3. Delete User based on id (DELETE)   
-   http://localhost:8080/users/111
+    http://localhost:8080/users/111
    
 4. Add New User (POST)
    http://localhost:8080/users/adduser
