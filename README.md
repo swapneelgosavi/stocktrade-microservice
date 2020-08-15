@@ -42,15 +42,21 @@ It has features like :
 8. Add Share to User (POST) <br /> http://localhost:8080/user/111/addshare
   <br />
   
-  POST Body :
-   {                
-        "price": 1500.0,
-        "quantity": 12,
-        "scriptName": "SYN",
-        "tradeDate": "2020-08-14T18:30:00.000+00:00"
-   }
+    POST Body :
+     {
+     <br />
+
+          "price": 1500.0,
+          "quantity": 12,
+          "scriptName": "SYN",
+          "tradeDate": "2020-08-14T18:30:00.000+00:00"
+      <br />
+     }
+   
    <br />
+   
    Note: Validation :  trade date should not be past date. Script name should be min 3 character
+   
    <br />
    Header : Content-Type : application/json
    
