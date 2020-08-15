@@ -3,13 +3,13 @@
 
 This is RESTful webservice for crud operations on user and user's shares data. Project provides functionality to add, delete and get data of Users and Shares.
 It has features like :
-  1. Basic Authentication with Spring Security
-  2. Exception Handling- Generic exception for bad requests/errors
-  3. Validation for RESTful Services
-  4. Dynamic filtering on response data
-  5. HATEOAS for RESTful Services
-  6. Auto Generation of Swagger Documentation
-  7. Monitoring APIs using Spring Boot Actuator
+  1. Basic **Authentication** with Spring Security
+  2. **Exception Handling**- Generic exception for bad requests/errors
+  3. **Validation** for RESTful Services
+  4. **Dynamic filtering** on response data
+  5. **HATEOAS** for RESTful Services
+  6. Auto Generation of **Swagger** Documentation
+  7. Monitoring APIs using Spring Boot **Actuator**
 
 #### Example Requests :
 
