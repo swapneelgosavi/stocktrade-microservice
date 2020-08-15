@@ -12,6 +12,7 @@ It has features like :
   7. Monitoring APIs using Spring Boot **Actuator**
 
 #### Example Requests :
+  Note : Send all the request using Basic Auth in header with username: swapneel and password: swapneel
 
 1. Get All Users (GET)<br /> http://localhost:8080/users
    
