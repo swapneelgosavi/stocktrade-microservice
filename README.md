@@ -1,5 +1,5 @@
 ## Spring Mixroservice Demo Project - User and its shares crud operation
-#### (using  : Spring Boot, Spring REST, Spring JPA, Spring HATEOAS, Spring Validation, Spring Actuator, Swagger )
+#### (using  : Spring Boot, Spring REST, Spring JPA, Spring HATEOAS, Spring Validation, Spring Actuator, Swagger, H2 database )
 
 This is RESTful webservice for crud operations on user and user's shares data. Project provides functionality to add, delete and get data of Users and Shares.
 It has features like :
