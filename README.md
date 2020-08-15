@@ -61,7 +61,8 @@ It has features like :
    Header : Content-Type : application/json
    
   <br />
-  **Actuator Link**
+  
+  ###Actuator Link <br />
     http://localhost:8080/actuator
     http://localhost:8080/
   
