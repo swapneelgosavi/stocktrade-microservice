@@ -36,13 +36,6 @@ It has features like :
 
 
 <br >
-**Actuator Link**
-http://localhost:8080/actuator
-http://localhost:8080/
-
-
-
-
 ------------------------Share's Data-------------------------------<br />
 
 6. Get All shares (GET) <br /> http://localhost:8080/user/share
@@ -67,7 +60,10 @@ http://localhost:8080/
    <br />
    Header : Content-Type : application/json
    
-  
+  <br />
+  **Actuator Link**
+    http://localhost:8080/actuator
+    http://localhost:8080/
   
 
 
