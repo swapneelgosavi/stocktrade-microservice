@@ -43,14 +43,11 @@ It has features like :
   <br />
   
     POST Body :
-     {
-     <br />
-
+     {     
           "price": 1500.0,
           "quantity": 12,
           "scriptName": "SYN",
-          "tradeDate": "2020-08-14T18:30:00.000+00:00"
-      <br />
+          "tradeDate": "2020-08-14T18:30:00.000+00:00"      
      }
    
    <br />
