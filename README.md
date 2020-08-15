@@ -62,7 +62,7 @@ It has features like :
    
   <br />
   
-  ###Actuator Link <br />
+  ### Actuator Link <br />
     http://localhost:8080/actuator
     http://localhost:8080/
   
