@@ -13,24 +13,20 @@ It has features like :
 
 #### Example Requests :
 
-1. Get All Users (GET)
-    http://localhost:8080/users
+1. Get All Users (GET)<br /> http://localhost:8080/users
    
-2. Get user based on id (GET)
-    http://localhost:8080/users/111
+2. Get user based on id (GET) <br /> http://localhost:8080/users/111
    
-3. Delete User based on id (DELETE)   
-    http://localhost:8080/users/111
+3. Delete User based on id (DELETE) <br /> http://localhost:8080/users/111
    
-4. Add New User (POST)
-   http://localhost:8080/users/adduser
+4. Add New User (POST)  <br /> http://localhost:8080/users/adduser
    
+   <br />
    POST Body : 
     {        
-        "name": "ljasda"        
+        "name": "swap"        
     }
-    
+    <br />
     Header : Content-Type : application/json
 
-5. Get User based on id ## HATEOAS example  
-    http://localhost:8080/hateoas/users/{id}   
+5. Get User based on id ## HATEOAS example   <br /> http://localhost:8080/hateoas/users/{id}   
