@@ -8,12 +8,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.FutureOrPresent;
-import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
+//@JsonFilter("ShareDataFilter")
 public class Share {
 
 	@Id

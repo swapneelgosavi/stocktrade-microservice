@@ -8,6 +8,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.fasterxml.jackson.databind.ser.FilterProvider;
+import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
+import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 import com.swapgo.stocktrade.exception.UserNotFoundException;
 import com.swapgo.stocktrade.model.Share;
 import com.swapgo.stocktrade.model.User;
@@ -77,6 +81,24 @@ public class ShareController {
 		return shareRepository.findAll();
 	}
 	
-	
+	//dynamic filtered data : sending id and script name only.
+/*	@GetMapping("/filter/user/{id}/share")
+	public MappingJacksonValue  getFilterDataOfShare(@PathVariable int id) {
+		Optional<User> user = userRepository.findById(id);
+		
+		if(!user.isPresent()) {
+			throw new UserNotFoundException("ID:"+ id);
+		}
+		Optional<Share> shareOpt= shareRepository.findByUserId(id);
+		Share share =  shareOpt.get();
+		
+		SimpleBeanPropertyFilter filter = SimpleBeanPropertyFilter.filterOutAllExcept("id", "scriptName");
+		FilterProvider filters = new SimpleFilterProvider().addFilter("ShareDataFilter", filter);
+		MappingJacksonValue mapping = new MappingJacksonValue(share);
+
+		mapping.setFilters(filters);
+		
+		return mapping;
+	}	*/
 	
 }
