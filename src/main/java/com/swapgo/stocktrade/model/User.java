@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Size;
 
 @Entity
 public class User {
@@ -13,6 +14,8 @@ public class User {
 	@Id
 	@GeneratedValue
 	private int id;
+	
+	@Size(min=2, message = "Name should be mininmum 2 character")  //validation to make name should be min length of 2
 	private String name;
 	
 	@OneToMany(mappedBy = "user")

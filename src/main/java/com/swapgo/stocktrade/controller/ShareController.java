@@ -4,8 +4,11 @@ import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -41,7 +44,7 @@ public class ShareController {
 	}
 	
 	@PostMapping("/user/{id}/addshare")
-	public ResponseEntity<Object> addShareToUser(@PathVariable int id,  @RequestBody Share share) {
+	public ResponseEntity<Object> addShareToUser(@PathVariable int id, @Valid @RequestBody Share share) {
 		
 		Optional<User> user = userRepository.findById(id);
 		
@@ -61,11 +64,12 @@ public class ShareController {
 		return ResponseEntity.created(location).build();
 	}	
 	
-	/*
-	 * @DeleteMapping("/user/share/{scriptName}") public void
-	 * deleteShare(@PathVariable String scriptName) {
-	 * shareRepository.deleteByScriptName(scriptName); }
-	 */
+	//this is not working. TODO:
+	@DeleteMapping("/user/share/{scriptName}") 
+	public void deleteShare(@PathVariable String scriptName) {
+		shareRepository.deleteByScriptName(scriptName); 
+	}
+
 	
 	
 	@GetMapping("/user/share")

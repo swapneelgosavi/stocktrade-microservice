@@ -7,6 +7,9 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.FutureOrPresent;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -18,7 +21,11 @@ public class Share {
 	private int id;
 	private float price;
 	private int quantity;
+	
+	@Size(min=3, message = "Script name should be mininmum of 3 character")
 	private String scriptName;
+	
+	@FutureOrPresent  //validation on date 
 	private Date tradeDate;
 
 	@ManyToOne(fetch = FetchType.LAZY)
