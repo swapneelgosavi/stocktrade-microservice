@@ -34,6 +34,15 @@ It has features like :
     <br />
 5. Get User based on id ## HATEOAS example   <br /> http://localhost:8080/hateoas/users/{id}   
 
+
+<br >
+**Actuator Link**
+http://localhost:8080/actuator
+http://localhost:8080/
+
+
+
+
 ------------------------Share's Data-------------------------------<br />
 
 6. Get All shares (GET) <br /> http://localhost:8080/user/share
