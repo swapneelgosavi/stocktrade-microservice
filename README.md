@@ -27,6 +27,39 @@ It has features like :
         "name": "swap"        
     }
     <br />
+    Note: Validation : Name should be min 2 character    
+    <br />
     Header : Content-Type : application/json
-
+    <br />
 5. Get User based on id ## HATEOAS example   <br /> http://localhost:8080/hateoas/users/{id}   
+
+------------------------Share's Data-------------------------------<br />
+
+6. Get All shares (GET) <br /> http://localhost:8080/user/share
+
+7. Get share data for perticular user (GET) <br /> http://localhost:8080/user/111/share
+
+8. Add Share to User (POST) <br /> http://localhost:8080/user/111/addshare
+  <br />
+  
+  POST Body :
+   {                
+        "price": 1500.0,
+        "quantity": 12,
+        "scriptName": "SYN",
+        "tradeDate": "2020-08-14T18:30:00.000+00:00"
+   }
+   <br />
+   Note: Validation :  trade date should not be past date. Script name should be min 3 character
+   <br />
+   Header : Content-Type : application/json
+   
+  
+  
+
+
+
+
+
+
+
