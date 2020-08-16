@@ -1,4 +1,4 @@
-## Spring Mixroservice Demo Project - User and its shares crud operation
+## Spring Mixroservice Project - User and its shares crud operation
 #### (using  : Spring Boot, Spring REST, Spring JPA, Spring HATEOAS, Spring Validation, Spring Actuator, Swagger, H2 database )
 
 This is RESTful webservice for crud operations on user and user's shares data. Project provides functionality to add, delete and get data of Users and Shares.
@@ -12,7 +12,8 @@ It has features like :
   7. Monitoring APIs using Spring Boot **Actuator**
 
 #### Example Requests :
-  Note : Send all the request using Basic Auth in header with username: swapneel and password: swapneel
+  Note : For Spring security, uncomment Spring security dependecy in pom.xml and send all the request using 
+  Basic Auth in header with username: swapneel and password: swapneel
 
 1. Get All Users (GET)<br /> http://localhost:8080/users
    
