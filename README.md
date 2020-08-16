@@ -24,10 +24,11 @@ It has features like :
 4. Add New User (POST)  <br /> http://localhost:8080/users/adduser
    
    <br />
-   POST Body : 
+    POST Body : 
     {        
         "name": "swap"        
     }
+    
     <br />
     Note: Validation : Name should be min 2 character    
     <br />
