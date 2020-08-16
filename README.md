@@ -67,6 +67,8 @@ It has features like :
     http://localhost:8080/actuator
     http://localhost:8080/
   
+  ### Swagger UI <br />
+    http://localhost:8080/swagger-ui/index.html
 
 
 
