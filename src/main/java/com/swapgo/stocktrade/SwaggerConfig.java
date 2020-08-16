@@ -18,7 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
 
 	public static final Contact DEFAULT_CONTACT = new Contact(
-			"Swapneel Go", "Swapneel Go", "test@gmail.com");
+			"Swapneel Go", "Coming Soon", "test@gmail.com");
 	
 	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
 			"User Shares Microservice", "Microservice", "1.0",
