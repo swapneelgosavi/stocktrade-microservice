@@ -8,7 +8,7 @@ It has features like :
   3. **Validation** for RESTful Services
   4. **Dynamic filtering** on response data
   5. **HATEOAS** for RESTful Services
-  6. Auto Generation of **Swagger** Documentation
+  6. **Swagger** Documentation for API's
   7. Monitoring APIs using Spring Boot **Actuator**
 
 #### Example Requests :
